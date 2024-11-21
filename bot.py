@@ -83,9 +83,7 @@ async def req_accept(c, m):
         ]] 
         await c.send_message(
             user_id, 
-            ACCEPTED_TEXT.format(user=m.from_user.mention, chat=m.chat.title), 
-            disable_web_page_preview=True, 
-            reply_markup=InlineKeyboardMarkup(lazydeveloper_btn)
+            ACCEPTED_TEXT.format(user=m.from_user.mention, chat=m.chat.title)
             )
     except Exception as e: 
         print(e)
