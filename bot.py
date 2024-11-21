@@ -79,7 +79,7 @@ async def req_accept(c, m):
     await c.approve_chat_join_request(chat_id, user_id)
     try: 
         lazydeveloper_btn = [[
-        InlineKeyboardButton('🚀Updates', url='https://t.me/+M9YKDF84DXRmZDVl')
+        InlineKeyboardButton('🎬. MOVIE UPDATES .🍟', url='https://t.me/+M9YKDF84DXRmZDVl')
         ]] 
         await c.send_message(
             user_id, 
@@ -93,6 +93,8 @@ async def req_accept(c, m):
    
 
 Bot.run()
+
+
 
 
 
