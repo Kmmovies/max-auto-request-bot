@@ -6,7 +6,7 @@ from os import environ as env
 import asyncio, datetime, time
 
 
-ACCEPTED_TEXT = "Hi {user}\nYour Request For {chat} Is Accepted ✅\n\n{user} 𝗦𝗘𝗡𝗗 👉 /start To Get 𝗞𝗮𝗻𝗻𝗮𝗱𝗮 𝗥𝗼𝗰𝗸𝗲𝗿𝘀 𝗠𝗼𝘃𝗶𝗲𝘀 Updates\n\n 𝗝𝗼𝗶𝗻👇👇\nhttps://t.me/+Kv_WVH4KpXZmNWRl\nhttps://t.me/+Kv_WVH4KpXZmNWRl"
+ACCEPTED_TEXT = "Hi {user}\nYour Request For {chat} Is Accepted ✅\n\n{user} 𝗦𝗘𝗡𝗗 👉 /start To Get 𝗞𝗠| 𝗞𝗮𝗻𝗻𝗮𝗱𝗮 𝗠𝗼𝘃𝗶𝗲𝘀 Updates\n\n 𝗝𝗼𝗶𝗻👇👇\nhttps://t.me/+7p3Ct97dvFphYjE1\nhttps://t.me/+7p3Ct97dvFphYjE1"
 START_TEXT = "Hai {}\n\nI am Auto Request Accept Bot With Working For All Channel. Add Me In Your Channel To Use"
 
 API_ID = int(env.get('API_ID'))
@@ -26,7 +26,7 @@ async def start_handler(c, m):
     user_id = m.from_user.id
     if not await Data.find_one({'id': user_id}): await Data.insert_one({'id': user_id})
     lazydeveloper_btn = [[
-        InlineKeyboardButton('Kannada Rockers', url='https://t.me/+Kv_WVH4KpXZmNWRl')
+        InlineKeyboardButton('𝗞𝗠 𝗠𝗢𝗩𝗜𝗘𝗦', url='https://t.me/+7p3Ct97dvFphYjE1')
     ]]
     return await m.reply_text(text=START_TEXT.format(m.from_user.mention), disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(lazydeveloper_btn))
           
